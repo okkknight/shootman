@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>甩锅篮球</title>
+    <meta name="theme-color" content="#79c8ff" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="game"></div>
+      <div id="hud" aria-hidden="true">
+        <div class="hud-top">
+          <div id="score" class="hud-score">
+            <span id="scoreTitle" class="hud-score-label">甩锅小白</span>
+            <span class="hud-score-sep" aria-hidden="true">·</span>
+            <span id="scoreValue" class="hud-score-value">0</span>
+          </div>
+          <div class="hud-title">甩锅篮球</div>
+        </div>
+        <button id="restartBtn" class="hud-restart" type="button">restart</button>
+        <div class="hud-bottom">
+          <div class="power-panel">
+            <div class="hud-hint hud-hint--desktop">按住空格蓄力，松开投篮</div>
+            <div class="hud-hint hud-hint--touch">按住下方按钮蓄力，松开投篮</div>
+            <button id="chargeBtn" class="hud-charge" type="button">按住蓄力</button>
+            <div class="power-track">
+              <div id="powerFill" class="power-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

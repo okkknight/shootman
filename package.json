@@ -1,0 +1,21 @@
+{
+  "name": "shootman",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:shootman": "VITE_BASE_PATH=/shootman/ vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/press-start-2p": "^5.2.7",
+    "phaser": "^3.85.2"
+  },
+  "devDependencies": {
+    "playwright": "^1.60.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.0.0"
+  }
+}
